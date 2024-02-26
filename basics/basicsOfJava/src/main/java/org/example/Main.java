@@ -23,5 +23,6 @@ public class Main {
         System.out.println(floatVar);
         System.out.println(doubleVar);
         System.out.println(charVar);
+
     }
 }
