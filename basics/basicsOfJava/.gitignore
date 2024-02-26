@@ -37,3 +37,10 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### Others ###
+100-days-java-code.iml
+misc.xml
+modules.xml
+vcs.xml
+workspace.xml
