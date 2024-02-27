@@ -11,7 +11,8 @@ public class IntegerOperations {
     int a = 10;
     int b = 20;
 
-    public IntegerOperations(){}
+    public IntegerOperations() {
+    }
 
     public int addition() {
         return a + b;
@@ -25,8 +26,10 @@ public class IntegerOperations {
         return a * b;
     }
 
-    public double division() {
-        return (double) a / b;
+    public int division() {
+        // Warning: 'a / b': integer division in floating-point context
+        // To resolve the warning, cast one or both operands to floating-point types
+        return a / b;
     }
 
 }

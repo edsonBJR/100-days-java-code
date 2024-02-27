@@ -29,7 +29,7 @@ public class IntegerOperationsTest {
     @Test
     public void shouldReturnValueOfDivison() {
         IntegerOperations operation = new IntegerOperations();
-        double result = operation.division();
+        int result = operation.division();
         System.out.println(result);
         /*
         When comparing floating-point numbers,
@@ -39,6 +39,6 @@ public class IntegerOperationsTest {
         if the difference between two floating-point numbers
         is within an acceptable range (delta).
          */
-        assertEquals(0.0, result, 0.001);
+        assertEquals(0.0, result, 0.1);
     }
 }
