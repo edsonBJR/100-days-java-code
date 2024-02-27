@@ -1,34 +1,37 @@
 package br.com.edsonbjr;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
 public class IntegerOperationsTest {
 
+    private IntegerOperations operation;
+    @Before
+    public void setUp() {
+        // Initialize the shared variable before each test
+        operation = new IntegerOperations();
+    }
     @Test
     public void shouldReturnValueOfAddiction() {
-        IntegerOperations operation = new IntegerOperations();
         int result = operation.addition();
         assertEquals(30, result);
     }
     @Test
     public void shouldReturnValueOfSubtraction() {
-        IntegerOperations operation = new IntegerOperations();
         int result = operation.subtraction();
         assertEquals(-10, result);
     }
 
     @Test
     public void shouldReturnValueOfMultiplication() {
-        IntegerOperations operation = new IntegerOperations();
         int result = operation.multiplication();
         assertEquals(200, result);
     }
 
     @Test
     public void shouldReturnValueOfDivison() {
-        IntegerOperations operation = new IntegerOperations();
         int result = operation.division();
         System.out.println(result);
         /*

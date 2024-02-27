@@ -9,6 +9,7 @@ public class FloatPointOperationsTest {
     private FloatPointOperations operation;
     @Before
     public void setUp() {
+        // Initialize the shared variable before each test
         operation = new FloatPointOperations();
     }
 
