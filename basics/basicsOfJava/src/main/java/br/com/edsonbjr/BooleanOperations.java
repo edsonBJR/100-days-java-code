@@ -1,6 +1,6 @@
 package br.com.edsonbjr;
 
-import java.util.Random;
+import java.util.Arrays;
 
 public class BooleanOperations {
 
@@ -16,18 +16,14 @@ public class BooleanOperations {
         Print the concatenated string.
      */
 
-    private String weatherConditions;
-    private String temperatureConditions;
-    private boolean goForWalk;
-
     public BooleanOperations(){}
 
     public static String[][] generateRandomWeather() {
         String[] weatherOptions = {"Sunny", "Humid", "Warm", "Mild", "Frigid"};
         int numberOfCombinations = calculateCombinations(weatherOptions.length, 2);
         String[][] combinations = new String[numberOfCombinations][2];
-        return generateCombinations(weatherOptions, combinations);
 
+        return generateCombinations(weatherOptions, combinations);
     }
 
     private static int calculateCombinations(int n, int k) {
@@ -50,16 +46,19 @@ public class BooleanOperations {
             for(int j = i + 1; j < options.length; j++) {
                 combinations[index][0] = options[i];
                 combinations[index][1] = options[j];
+                index++;
             }
         }
         return combinations;
     }
 
-    public boolean shouldGoForWalk() {
+    public boolean shouldGoForWalk()  {
         String[][] weatherCombinations = generateRandomWeather();
-        for (String[] combination : weatherCombinations) {
-            if(combination[0].contains("Sunny") && combination[1].contains("Warm")) {
-                System.out.println(combination[0] + ", " + combination[1]);
+
+        for(int i = 0; i < weatherCombinations.length; i++) {
+            if(Arrays.asList(weatherCombinations[i]).contains("Sunny")
+                    && Arrays.asList(weatherCombinations[i]).contains("Warm")) {
+                System.out.println("Combination " + (i + 1) + ": " + Arrays.toString(weatherCombinations[i]));
                 return true;
             }
         }
