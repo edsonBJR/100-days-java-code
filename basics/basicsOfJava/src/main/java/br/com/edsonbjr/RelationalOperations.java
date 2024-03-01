@@ -9,7 +9,7 @@ public class RelationalOperations {
             Print the results of each comparison.
      */
 
-    static int a = 5;
+    static int a = 10;
     static int b = 10;
 
     public RelationalOperations() {}
