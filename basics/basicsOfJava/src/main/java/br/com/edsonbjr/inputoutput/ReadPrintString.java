@@ -22,13 +22,13 @@ public class ReadPrintString {
         int currentHour = now.getHour();
 
         if(currentHour >= 0 && currentHour < 12) {
-            System.out.println(now + " - " + currentHour);
-            System.out.println("Dear " + inputStr + " good mourning!");
+//            System.out.println(now + " - " + currentHour);
+            System.out.println("Dear " + inputStr + " good morning!");
         } else if(currentHour >= 12 && currentHour < 18) {
-            System.out.println(now + " - " + currentHour);
+//            System.out.println(now + " - " + currentHour);
             System.out.println("Dear " + inputStr + " good afternoon!");
         } else {
-            System.out.println(now + " - " + currentHour);
+//            System.out.println(now + " - " + currentHour);
             System.out.println("Dear " + inputStr + " good evening!");
         }
     }
