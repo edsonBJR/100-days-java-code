@@ -1,6 +1,8 @@
-package br.com.edsonbjr;
+package br.com.edsonbjr.datatypes;
 
 import static org.junit.Assert.assertEquals;
+
+import br.com.edsonbjr.datatypes.FloatPointOperations;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -1,5 +1,6 @@
-package br.com.edsonbjr;
+package br.com.edsonbjr.datatypes;
 
+import br.com.edsonbjr.datatypes.IncrementDecrementDemo;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

@@ -1,4 +1,4 @@
-package br.com.edsonbjr;
+package br.com.edsonbjr.datatypes;
 @SuppressWarnings("FieldCanBeLocal")
 public class CharacterOperations {
 

@@ -1,5 +1,6 @@
-package br.com.edsonbjr;
+package br.com.edsonbjr.datatypes;
 
+import br.com.edsonbjr.datatypes.LogicalOperators;
 import org.junit.Test;
 
 import java.util.Arrays;

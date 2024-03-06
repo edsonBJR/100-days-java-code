@@ -1,4 +1,4 @@
-package br.com.edsonbjr;
+package br.com.edsonbjr.datatypes;
 
 public class ArithmeticOverFlow {
 
