@@ -23,7 +23,7 @@ public class ReadWriteFile {
         }
     }
 
-    private static void readFileAndWriteToFile(String sourceFilePath, String destinationFilePath) throws IOException{
+    static void readFileAndWriteToFile(String sourceFilePath, String destinationFilePath) throws IOException{
 
         //Open the source file for reading
         try (BufferedReader reader = new BufferedReader(new FileReader(sourceFilePath))){
