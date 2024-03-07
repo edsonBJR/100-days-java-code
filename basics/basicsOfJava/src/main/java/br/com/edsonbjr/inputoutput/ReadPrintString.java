@@ -3,7 +3,6 @@ package br.com.edsonbjr.inputoutput;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.sql.SQLOutput;
 import java.time.LocalDateTime;
 
 public class ReadPrintString {
