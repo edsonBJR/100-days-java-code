@@ -12,6 +12,7 @@ public class ReverseString {
         char[] charArray = text.toCharArray();
         char[] newString = new char[charArray.length];
 
+        // Loop condition to start from charArray.length - 1 and go down to 0.
         for (int i = charArray.length - 1, j = 0; i >= 0; --i, ++j) {
             newString[j] = charArray[i];
         }
