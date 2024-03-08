@@ -7,8 +7,7 @@ public class ReverseString {
             Read a string from the user and print its reverse.
      */
 
-    public static void main(String[] args) {
-        String text = "Edson";
+    public static void printReverseString(String text) {
         char[] charArray = text.toCharArray();
         char[] newString = new char[charArray.length];
 
