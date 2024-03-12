@@ -12,6 +12,10 @@ public class SimpleCalculator {
             Read the numbers and operation from the user.
      */
 
+    private BufferedReader reader;
+    public SimpleCalculator(BufferedReader reader) {
+        this.reader = reader;
+    }
     public static Double Addition(Double valueA, Double valueB) {
         return valueA + valueB;
     }
@@ -28,7 +32,7 @@ public class SimpleCalculator {
         return valueA / valueB;
     }
 
-    public static void main(String[] args) throws IOException {
+    public Double calculator() throws IOException {
         System.out.println("Choose the number of Operation: 1 - Addition | 2 - Subtraction | 3 - Multiplication | 4 - Division");
 
         BufferedReader bfn = new BufferedReader(new InputStreamReader(System.in));
@@ -45,22 +49,19 @@ public class SimpleCalculator {
         switch (numberOfOperation) {
             case 1:
                 System.out.println("Addition Operation chose!");
-                System.out.println(Addition(valueA, valueB));
-                break;
+                return Addition(valueA, valueB);
             case 2:
                 System.out.println("Subtraction Operation chose!");
-                System.out.println(Subtraction(valueA, valueB));
-                break;
+                return Subtraction(valueA, valueB);
             case 3:
                 System.out.println("Multiplication Operation chose!");
-                System.out.println(Multiplication(valueA, valueB));
-                break;
+                return Multiplication(valueA, valueB);
             case 4:
                 System.out.println("Division Operation chose!");
-                System.out.println(Division(valueA, valueB));
-                break;
+                return Division(valueA, valueB);
             default:
                 System.out.println("Invalid Operation - Choose again.");
+                return null;
         }
     }
 }
